@@ -15,10 +15,11 @@
 .todo-app{
     width: 100%;
     max-width: 540px;
-    background: white;
+    background: rgb(255, 255, 255);
     margin: 100px auto 20px;
     padding:40px 30px 70px ;
     border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(34, 11, 241, 0.986);
 }
 .todo-app h2{
     color: rgb(41, 160, 230);
