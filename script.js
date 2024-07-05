@@ -18,6 +18,21 @@ function addTask() {
     saveData();
 }
 
+//Press "Enter" to add task
+inputBox.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+        addTask();
+    }
+});
+
+//cursor to task box shortcut = '/' forward slash
+document.addEventListener("keydown", function(e) {
+    if (e.key === "/") {
+        e.preventDefault();
+        inputBox.focus();
+    }
+});
+
 listContainer.addEventListener("click", function (e) {
     if (e.target.tagName === "LI") {
         e.target.classList.toggle("checked");
